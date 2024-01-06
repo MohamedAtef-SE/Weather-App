@@ -134,8 +134,8 @@
 
 @media (max-width: 767px) {
     .weather-card.first-col {
-        height: calc(100vh - 204px - 50px);
-        margin-bottom: 50px;
+        height: calc(100vh - 204px - 100px);
+        margin-bottom: 100px;
     }
 
     .weather-card.second-col,
