@@ -142,12 +142,12 @@ function getDegree(whichCity) {
             overmorrowMaxDeg.innerHTML = `${finalResult.forecast.forecastday[2].day.maxtemp_c}&deg;C`;
             overmorrowMinDeg.innerHTML = `${finalResult.forecast.forecastday[2].day.mintemp_c}&deg;C`;
             if (Number(finalResult.current.temp_c) >= 24) {
-                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(../Images/summer.jpg)`;
+                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(./Images/summer.jpg)`;
             } else if (Number(finalResult.current.temp_c) < 24 && Number(finalResult.current.temp_c) > 5) {
-                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(../Images/winter.jpg)`;
+                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(./Images/winter.jpg)`;
 
             } else if (Number(finalResult.current.temp_c) <= 0) {
-                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(../Images/freeze.jpg)`;
+                mainApp.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.250) 50%, rgba(0, 0, 0, 0.250) 50%), url(./Images/freeze.jpg)`;
 
             }
         }
