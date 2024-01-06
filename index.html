@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <section class="main-weather container-fluid  vh-100 overflow-auto">
+    <header class="position-absolute top-0 start-0 w-100">
         <nav class="navbar position-absolute z-3 top-0 start-0 w-100 navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./Images/logo.png" class="w-100" alt="cloud logo"></a>
@@ -46,68 +46,77 @@
                 </div>
             </div>
         </nav>
-        <div class="search-field w-75 m-auto">
-            <input type="search" class="search-bar w-100 mt-10 mb-5 text-white border-0 px-4 py-3 form-control"
-                placeholder="Find your Location...">
-            <div class="table-cover w-100 m-0 position-relative">
-                <table class="table w-100 m-0 p-0 position-absolute top-0 start-0">
-                    <thead></thead>
-                    <tbody class="tbody"></tbody>
-                </table>
-            </div>
-        </div>
-        <div class="main-weather-cards row container m-auto">
-            <div class="weather-card col-lg-4 first-col p-0">
-                <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
-                    <p class="currDay m-0">Monday</p>
-                    <p class="currDate m-0">3 January</p>
+    </header>
+    <main>
+        <section class="main-weather container-fluid  vh-100 overflow-auto">
+
+            <div class="search-field w-75 m-auto">
+                <input type="search" class="search-bar w-100 mt-10 mb-5 text-white border-0 px-4 py-3 form-control"
+                    placeholder="Find your Location...">
+                <div class="table-cover w-100 m-0 position-relative">
+                    <table class="table w-100 m-0 p-0 position-absolute top-0 start-0">
+                        <thead></thead>
+                        <tbody class="tbody"></tbody>
+                    </table>
                 </div>
-                <div class="degreeInfo p-4">
-                    <h3 class="cityName">Cairo</h3>
-                    <div class="degreeWithImg d-flex justify-content-between  align-items-center">
-                        <p class="currDegree text-white m-0">19&deg;C</p>
-                        <img class="w-25 m-0 todayCondition-icon" src="./weather/64x64/day/113.png" alt="cloud">
+            </div>
+            <div class="main-weather-cards row container m-auto">
+                <div class="weather-card col-lg-4 first-col p-0">
+                    <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
+                        <p class="currDay m-0">Monday</p>
+                        <p class="currDate m-0">3 January</p>
                     </div>
-                    <p class="degreeDes todayCondition-text text-center">Partly cloudy</p>
-                    <ul class="position-relative m-0 list-unstyled d-flex align-items-center justify-content-center">
-                        <li class="precip_in mx-3">20%</li>
-                        <li class="wind_kph mx-3">18km/h</li>
-                        <li class="wind_dir mx-3">East</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="weather-card col-lg-4 second-col p-0">
-                <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
-                    <p class="tomorrow m-0 m-auto">Tuesday</p>
-                </div>
-                <div class="degreeInfo p-4">
-                    <div
-                        class="degreeWithImg d-flex h-150px flex-column-reverse justify-content-center align-items-center">
-                        <p class="tomorrowMinDeg text-secondary fs-6 m-0">12&deg;C</p>
-                        <p class="tomorrowMaxDeg text-white fs-4 m-0">16&deg;C</p>
-                        <img class="w-50px m-0 m-0 tomorrowCondition-icon" src="./weather/64x64/day/113.png"
-                            alt="cloud">
+                    <div class="degreeInfo p-4">
+                        <h3 class="cityName">Cairo</h3>
+                        <div class="degreeWithImg d-flex justify-content-between  align-items-center">
+                            <p class="currDegree text-white m-0">19&deg;C</p>
+                            <img class="w-25 m-0 todayCondition-icon" src="./weather/64x64/day/113.png" alt="cloud">
+                        </div>
+                        <p class="degreeDes todayCondition-text text-center">Partly cloudy</p>
+                        <ul
+                            class="position-relative m-0 list-unstyled d-flex align-items-center justify-content-center">
+                            <li class="precip_in mx-3">20%</li>
+                            <li class="wind_kph mx-3">18km/h</li>
+                            <li class="wind_dir mx-3">East</li>
+                        </ul>
                     </div>
-                    <p class="degreeDes text-center mt-4 tomorrowCondition-text">Sunny</p>
                 </div>
-            </div>
-            <div class="weather-card col-lg-4 third-col p-0">
-                <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
-                    <p class="overmorrow m-0 m-auto">Wednesday</p>
-                </div>
-                <div class="degreeInfo p-4">
-                    <div
-                        class="degreeWithImg d-flex h-150px flex-column-reverse justify-content-center align-items-center">
-                        <p class="overmorrowMinDeg text-secondary fs-6 m-0">12&deg;C</p>
-                        <p class="overmorrowMaxDeg text-white fs-4 m-0">16&deg;C</p>
-                        <img class="w-50px m-0 m-0 overmorrowCondition-icon" src="./weather/64x64/day/113.png"
-                            alt="cloud">
+                <div class="weather-card col-lg-4 second-col p-0">
+                    <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
+                        <p class="tomorrow m-0 m-auto">Tuesday</p>
                     </div>
-                    <p class="degreeDes text-center mt-4 overmorrowCondition-text">Partly cloudy</p>
+                    <div class="degreeInfo p-4">
+                        <div
+                            class="degreeWithImg d-flex h-150px flex-column-reverse justify-content-center align-items-center">
+                            <p class="tomorrowMinDeg text-secondary fs-6 m-0">12&deg;C</p>
+                            <p class="tomorrowMaxDeg text-white fs-4 m-0">16&deg;C</p>
+                            <img class="w-50px m-0 m-0 tomorrowCondition-icon" src="./weather/64x64/day/113.png"
+                                alt="cloud">
+                        </div>
+                        <p class="degreeDes text-center mt-4 tomorrowCondition-text">Sunny</p>
+                    </div>
+                </div>
+                <div class="weather-card col-lg-4 third-col p-0">
+                    <div class="dayInfo p-4 py-3 d-flex w-100 justify-content-between">
+                        <p class="overmorrow m-0 m-auto">Wednesday</p>
+                    </div>
+                    <div class="degreeInfo p-4">
+                        <div
+                            class="degreeWithImg d-flex h-150px flex-column-reverse justify-content-center align-items-center">
+                            <p class="overmorrowMinDeg text-secondary fs-6 m-0">12&deg;C</p>
+                            <p class="overmorrowMaxDeg text-white fs-4 m-0">16&deg;C</p>
+                            <img class="w-50px m-0 m-0 overmorrowCondition-icon" src="./weather/64x64/day/113.png"
+                                alt="cloud">
+                        </div>
+                        <p class="degreeDes text-center mt-4 overmorrowCondition-text">Partly cloudy</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer class="text-center text-white p-4 d-flex justify-content-center align-self-center">
+        <p>&copy;2023 Designed by <span class="fw-bolder">Mohamed Atef</span>. All rights reserved</p>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

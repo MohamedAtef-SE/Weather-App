@@ -140,7 +140,7 @@
 
     .weather-card.second-col,
     .weather-card.third-col {
-        height: calc(50vh - 50px - 25px);
+        height: calc(50vh - 102px - 25px);
         margin-bottom: 25px;
     }
 }
@@ -205,4 +205,12 @@ ul .wind_dir::before {
 
 ul .wind_kph::before {
     content: '\f72e';
+}
+
+footer {
+    background-color: var(--second-color);
+}
+
+footer span {
+    color: var(--main-color);
 }
