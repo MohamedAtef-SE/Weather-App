@@ -143,6 +143,17 @@
         height: calc(50vh - 102px - 25px);
         margin-bottom: 25px;
     }
+
+    .weather-card.first-col .degreeWithImg {
+        flex-direction: column;
+    }
+
+    .weather-card.first-col .degreeWithImg .currDegree {
+        font-size: 50px;
+    }
+
+
+
 }
 
 
