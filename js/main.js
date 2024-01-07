@@ -117,7 +117,7 @@ function getDegree(whichCity) {
             windKPH.innerHTML = `${finalResult.current.wind_kph}km/h`;
             windDirection.innerHTML = finalResult.current.wind_dir;
             let dayIS = finalResult.current.last_updated.slice(0, 11);
-            currentDate.innerHTML = `${d.getDay()} ${months[d.getMonth()]}`;
+            currentDate.innerHTML = `${d.getDate()} ${months[d.getMonth()]}`;
             currentDay.innerHTML = days[d.getDay()];
             if (d.getDay() == 6) {
                 tomorrowDay.innerHTML = days[0];
